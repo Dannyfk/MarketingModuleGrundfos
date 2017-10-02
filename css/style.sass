@@ -1,5 +1,17 @@
+body 
+    display: grid
+    grid-template-columns: 15vw 70vw 15vw
+    grid-template-rows: 60vh 40vh
+    grid-template-areas: "top top top" ". bot ."
+    background-color: whitesmoke
+    overflow-x: hidden
 
+.wrapper
+    grid-area: top
+.wrapper2
+    grid-area: bot
 
+    
 header 
     background-color: #11497b
     background-size: cover
@@ -48,6 +60,7 @@ header
 
 .navbar2
     height: 75px
+    background-color: #fff
 
 .navbar2__item
     display: inline-block
@@ -65,14 +78,20 @@ header
     text-decoration: none
 
 .boxes 
-    background-color: #999999
     height: 45vh;
     display: flex
     justify-content: space-around
 
-.box
-    margin-top: 50px
+.boxes__box
+    margin-top: 40px
     width: 400px
     height: 300px
-    border: 1px solid #000000
     background-color: #FFF
+
+.boxes__heading
+    font-size: 30px
+    padding: 10px
+
+.boxes__text
+    font-size: 20px
+    padding-left: 10px
