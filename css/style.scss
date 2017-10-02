@@ -1,0 +1,15 @@
+ main {
+   display: inline-grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-column-gap: 2em;
+
+   #update {
+     display: grid;
+     width: 10em;
+     height: 8em;
+
+   }
+
+
+
+ }
