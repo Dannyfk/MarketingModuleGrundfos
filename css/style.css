@@ -34,6 +34,15 @@ header {
   height: 400px;
   text-align: center; }
 
+.hero__btn {
+  font-size: 20px;
+  color: #ffffff;
+  width: 300px;
+  height: 40px;
+  background-color: #4aa22c;
+  border: 1px solid green;
+  text-transform: uppercase; }
+
 .navbar__list {
   display: -webkit-box;
   display: -webkit-flex;
@@ -54,7 +63,7 @@ header {
   padding-bottom: 10px; }
 
 .hero__center {
-  padding-top: 120px; }
+  padding-top: 100px; }
 
 .hero__text {
   color: #ffffff;
@@ -86,6 +95,9 @@ header {
   color: #333333;
   text-decoration: none; }
 
+.navbar2__item--active {
+  border-bottom: 3px solid #34648f; }
+
 .boxes {
   height: 45vh;
   display: -webkit-box;
@@ -104,10 +116,12 @@ header {
 
 .boxes__heading {
   font-size: 30px;
-  padding: 10px; }
+  padding: 10px;
+  color: #333333; }
 
 .boxes__text {
   font-size: 20px;
-  padding-left: 10px; }
+  padding-left: 10px;
+  color: #333333; }
 
 /*# sourceMappingURL=style.css.map */
