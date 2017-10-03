@@ -1,15 +1,60 @@
+body {
+  font-family: Tahoma, sans-serif;
+}
+
  main {
    display: inline-grid;
    grid-template-columns: 1fr 1fr 1fr;
    grid-column-gap: 2em;
 
-   #update {
+   #update_1 {
      display: grid;
-     width: 10em;
-     height: 8em;
+     align-content: end;
+     width: 20em;
+     height: 15em;
+     background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ), url(../images/alpha3_update.jpg);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: 50% 50%;
 
    }
 
+   #update_2 {
+     @extend #update_1 ;
+     background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ), url(../images/circulators_update.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+   }
 
+   #update_3 {
+     @extend #update_1 ;
+     background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4)
+    ), url(../images/scala2_update.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+   }
+
+   h3, p {
+     color: #fcfcfc;
+     align-self: end;
+     text-shadow: 0 1px 0 black;
+   }
+
+   p {
+     align-self: end;
+   }
 
  }
