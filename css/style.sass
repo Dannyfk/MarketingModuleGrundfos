@@ -1,16 +1,19 @@
 body 
     display: grid
     grid-template-columns: 15vw 70vw 15vw
-    grid-template-rows: 60vh 40vh
+    grid-template-rows: 60vh 13vh
     grid-template-areas: "top top top" ". bot ."
-    background-color: whitesmoke
+    background-color: #FFFFFFF
     overflow-x: hidden
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
 
 .wrapper
     grid-area: top
 
 .wrapper2
     grid-area: bot
+    display: flex
+    justify-content: center
 
 header 
     background-color: #11497b
@@ -27,33 +30,17 @@ header
     letter-spacing: 2px
 
 .hero 
-    background-image: url("../images/bg.jpg")
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg")
     background-size: cover
     background-repeat: no-repeat
     background-position: center center
     height: 400px
     text-align: center
 
-.hero__btn
-    font-size: 20px
-    color: #ffffff
-    width: 300px
-    height: 40px
-    background-color: #4aa22c
-    border: 1px solid green
-    text-transform: uppercase
-
-.navbar__list 
-    display: flex
-    justify-content: center
-
-.navbar__link
-    color: #ffffff
-    text-decoration: none
-
 .hero__heading
     color: #ffffff
-    font-size: 90px
+    font-size: 70px
+    font-weight: bold
     padding-bottom: 10px
 
 .hero__center
@@ -62,12 +49,41 @@ header
 
 .hero__text
     color: #ffffff
-    font-size: 40px
+    font-size: 25px
     padding-bottom: 35px
+
+.hero__btn
+    font-size: 20px
+    color: #ffffff
+    width: 300px
+    height: 40px
+    background-color: #6eb556
+    border: none
+    text-transform: uppercase
+    border-radius: 2px
+    &:hover 
+        background-color: #4aa22c
+        cursor: pointer
+
+.navbar__list 
+    display: flex
+    justify-content: center
+
+.navbar__link
+    color: #ffffff
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold
 
 .navbar2
     height: 75px
-    background-color: #fff
+    background-color: #dedede;
+    border-bottom: 1px solid #c9c9c9;
 
 .navbar2__item
     display: inline-block
@@ -76,16 +92,24 @@ header
     font-size: 20px
     letter-spacing: 2px
 
+.navbar2__item--active
+    border-bottom: 3px solid #11497b 
+
+
 .navbar2__list 
     display: flex
     justify-content: center
 
 .navbar2__link
     color: #333333
-    text-decoration: none
-
-.navbar2__item--active
-    border-bottom: 3px solid #34648f
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold
 
 .boxes 
     height: 45vh
@@ -93,17 +117,52 @@ header
     justify-content: space-around
 
 .boxes__box
-    margin-top: 40px
+    margin: 20px
     width: 400px
     height: 300px
-    background-color: #FFF
+    background-color: whitesmoke
+    border: 1px solid #d5d5d5
 
 .boxes__heading
-    font-size: 30px
+    font-size: 25px
+    font-weight: bold
     padding: 10px
     color: #333333
 
 .boxes__text
-    font-size: 20px
+    font-size: 18px
     padding-left: 10px
+    line-height: 1.42rem
     color: #333333
+
+.boxes__link
+    text-decoration: none
+
+.search__input 
+    width: 657px
+    height: 41px
+    background-color: #f7f7f7
+    border: 2px solid #d5d5d5
+    padding: 15px
+    outline: none
+    margin-right: 16px
+
+.search__input::placeholder
+    color: #c9c9c9
+
+.search__btn
+    height: 40px
+    width: 110px
+    background-color: #127abe
+    border: none
+    color: #ffffff
+    font-size: 15px
+    font-weight: bold
+    text-transform: uppercase
+
+.search
+    padding: 20px
+    margin: 20px
+    border: 2px solid #d5d5d5
+    width: 790px
+
