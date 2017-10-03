@@ -56,5 +56,45 @@ body {
    p {
      align-self: end;
    }
+   .updateModal {
+     position: fixed;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     left: 0;
+     background: rgba(0, 0, 0, 0.8);
+     z-index: 99999;
+     opacity: 0;
+     transition: opacity 400ms ease-in;
+     pointer-events: none;
+   }
+   .updateModal:target {
+     opacity: 1;
+     pointer-events: auto;
+   }
+   .updateModal > div {
+     width: 500px;
+     position: relative;
+     margin: 10% auto;
+     background: #fafafa;
+     border-radius: 10px;
+   }
+   .close {
+     background: #606061;
+     color: #ffffff;
+     line-height: 25px;
+     position: absolute;
+     right: -15px;
+     top: -10px;
+     width: 25px;
+     text-align: center;
+     text-decoration: none;
+     font-weight: bold;
+     border-radius: 10px;
+     box-shadow: 1px 1px 3px #000;
+   }
+   .close:hover {
+     background-color: #00d9ff;
+   }
 
  }
