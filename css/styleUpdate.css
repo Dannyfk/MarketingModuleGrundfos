@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: Tahoma, sans-serif;
   background-color: #FFFFFFF;
@@ -114,10 +119,11 @@ header {
   padding-bottom: 35px; }
 
 .hero__btn {
-  font-size: 20px;
+  font-size: 13px;
+  font-weight: bold;
   color: #ffffff;
-  width: 300px;
-  height: 40px;
+  width: 148px;
+  height: 31px;
   background-color: #6eb556;
   border: none;
   text-transform: uppercase;
