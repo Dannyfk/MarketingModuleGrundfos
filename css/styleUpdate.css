@@ -181,78 +181,113 @@ header {
   border: 2px solid #d5d5d5;
   width: 790px; }
 
-/*# sourceMappingURL=style2.css.map */
+/* update boxes */
 main {
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2em; }
-  main #update_1, main #update_2, main #update_3 {
-    display: grid;
-    align-content: end;
-    width: 20em;
-    height: 15em;
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
-  main #update_2 {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
-  main #update_3 {
-    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50% 50%; }
-  main h3, main p {
-    color: #fcfcfc;
-    align-self: end;
-    text-shadow: 0 1px 0 black; }
-  main p {
-    align-self: end; }
-  main .updateModal {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    z-index: 99999;
-    opacity: 0;
-    transition: opacity 400ms ease-in;
-    pointer-events: none; }
-  main .updateModal:target {
-    opacity: 1;
-    pointer-events: auto; }
-  main .updateModal > div {
-    width: 500px;
-    position: relative;
-    margin: 10% auto;
-    background: #fafafa;
-    border-radius: 10px; }
-  main .close {
-    background: #606061;
-    color: #ffffff;
-    line-height: 25px;
-    position: absolute;
-    right: -15px;
-    top: -10px;
-    width: 25px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 10px;
-    box-shadow: 1px 1px 3px #000; }
-  main .close:hover {
-    background-color: #00d9ff; }
-
-.wrapper {
-  grid-area: top; }
-
-.wrapper2 {
-  grid-area: bot;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2em;
+  margin: 3em;
   justify-content: center; }
+
+main #update_1,
+main #update_2,
+main #update_3,
+main #update_4 {
+  display: grid;
+  align-content: end;
+  width: 20em;
+  height: 15em;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+main #update_2 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+main #update_3 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+main #update_4 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%; }
+
+.main__link {
+  margin: 20px; }
+
+main h3,
+main p {
+  color: #fcfcfc;
+  align-self: end;
+  text-shadow: 0 1px 0 black; }
+
+main p {
+  align-self: end; }
+
+main .updateModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+
+main .updateModal:target {
+  opacity: 1;
+  pointer-events: auto; }
+
+main .updateModal > div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  background: #fafafa;
+  border-radius: 10px; }
+
+main .close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #000; }
+
+main .close:hover {
+  background-color: #00d9ff; }
+
+/* footer */
+footer {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #11497b;
+  color: white; }
+
+footer p {
+  color: white;
+  font-size: 15px; }
+
+footer #footer {
+  margin-left: 20%;
+  margin-right: 20%; }
+
+footer hr {
+  size: 0.5px; }
 
 /*# sourceMappingURL=styleUpdate.css.map */
