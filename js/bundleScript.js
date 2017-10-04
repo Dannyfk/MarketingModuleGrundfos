@@ -62,28 +62,31 @@ function displayBundle() {
 
     //creating container for all the bundles
     var container = $("<section id='bundleSection' class='findMaterialContentWrapper'></section>");
-    var productHeader = $("<h4>"+product.name+"</h4>");
+    var productHeader = $("<h3>"+product.name+"</h3>");
     container.append(productHeader);
 
     var productThumbnail = $("<image src="+product.thumbnail+" alt='Product thumbnail'><br>");
     container.append(productThumbnail);
+
+    var bundleBoxContainer = $("<section id='bundleBoxContainer'><h4>Bundles</h4></section>");
     //loop to add the bundles from a list in bundleClass
     for(var i = 0; i<bundleCollection.length; i++){
         //the loop creates a box containing the bundle with a click function thats called with the id of the box
         var bundleBox = $("<section class='bundleBox' id="+bundleCollection[i].name+"></section>");
         bundleBox.click(function(){ displayBundleContent(this.id); });
-        var header = $("<h4>"+bundleCollection[i].name+"</h4>");
+        var header = $("<h5>"+bundleCollection[i].name+"</h5>");
         bundleBox.append(header);
-        container.append(bundleBox);
+        bundleBoxContainer.append(bundleBox);
+        container.append(bundleBoxContainer);
     }
 
     $("#bundleContentSection").append(container);
+    scroll(420);
 }
 
 //Function to display the content when a bundle is selected
 function displayBundleContent(name) {
     $("#downloadSection").remove();
-
     var container = $("<section id='downloadSection' class='findMaterialContentWrapper'></section>");
     var header = $("<h4>"+name+"</h4>");
     container.append(header);
@@ -102,25 +105,28 @@ function displayBundleContent(name) {
     }
     container.append(introList);
 
-    var secondHeader = $("<h4>What you can get:</h4>");
+    var secondHeader = $("<br><h4>What you can get:</h4>");
     container.append(secondHeader);
     //Display the download section of the bundle
     displayDownloads(bundle, container);
 
     $("#bundleContentSection").append(container);
+    scroll(730);
 }
 
 //Function to display all the downloads of a product that is in the bundle
 function displayDownloads(bundle, container){
     for(var i = 0; i<bundle.contains.length; i++){
         if(product[bundle.contains[i]]===true){
-            var checkbox = $("<input type='checkbox' name='download' value="+bundle.contains[i]+"><p id='checkBoxText'>"+firstLetterCapital(bundle.contains[i])+"</p><br>");
-            container.append(checkbox);
+            var wrapper = $("<section class='checkBoxContentContainer'></section>");
+            var checkbox = $("<input type='checkbox' name='download' value="+bundle.contains[i]+"><p id='checkBoxText'>"+firstLetterCapital(bundle.contains[i])+"</p><img onClick=expandDownload(this) src='images/downArrow.png'/><br>");
+            wrapper.append(checkbox);
+            container.append(wrapper);
             
         };  
     }
 
-    var checkAll = $("<p id='selectAll' onClick='selectAll()'>Select/Deselect all</p><br>");
+    var checkAll = $("<br><p id='selectAll' onClick='selectAll()'>Select/Deselect all</p><br>");
     container.append(checkAll);
 
     var download = $("<button id='downloadButton' onClick='download()'>Download</button>");
@@ -171,6 +177,34 @@ function searchError(){
     }
 }
 
+function scroll(pixels) {
+    $('html, body').animate({
+        scrollTop: pixels
+    }, 1000);
+}
+
+//Function to expand the downloadcontent maincategori e.g. Images 
+//This currently only works for show because we create examples here
+function expandDownload(element){
+    var container = element.parentElement;
+    var child = container.getElementsByClassName("expandSection")[0];
+    if(child === undefined){
+        var expandContainer = $("<section class='expandSection'><img id='levelDownImg' src='images/levelDown.png'/></section>")
+        var expandContent = $("<input type='checkbox' name='download' value='test'><p>Option</p><br>");
+        var expandContent2 = $("<input type='checkbox' name='download' value='test'><p>Option</p><br>");
+        var expandContent3 = $("<input type='checkbox' name='download' value='test'><p>Option</p><br>");
+        expandContainer.append(expandContent);
+        expandContainer.append(expandContent2);
+        expandContainer.append(expandContent3);
+        $(container).append(expandContainer);
+    }
+    else {
+        container.removeChild(child);
+    }
+    
+}
+
 function consoleLogTest(){
     console.log("test function run");
 }
+

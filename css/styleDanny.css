@@ -10,8 +10,28 @@ body {
   color: #333333; }
   body button {
     font-family: GrundfosTheSans, Verdana, sans-serif; }
-    body button p {
-      font-size: 0.8em; }
+  body h1 {
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    color: #333333;
+    text-rendering: optimizeLegibility;
+    font-size: 27px;
+    font-weight: bold; }
+  body h2, body h3 {
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    color: #333333;
+    text-rendering: optimizeLegibility;
+    font-size: 25px;
+    font-weight: bold; }
+  body h4, body h5 {
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    color: #333333;
+    text-rendering: optimizeLegibility;
+    font-size: 23px;
+    font-weight: bold; }
+  body p {
+    font-family: Tahoma, sans-serif;
+    color: #727272;
+    font-size: 13px; }
 
 #test1, #test2, #test3 {
   cursor: pointer; }
@@ -35,24 +55,56 @@ body {
 #selectAll {
   cursor: pointer;
   color: #3386c3;
-  display: inline-block; }
+  display: inline-block;
+  font-family: Tahoma;
+  font-size: 13px;
+  color: #0068b4;
+  margin-bottom: 10px; }
 
 #selectAll:hover {
   color: #0068b4; }
 
 #bundleContentSection {
   margin-top: 20px; }
+  #bundleContentSection img {
+    max-height: 200px;
+    max-width: 200px; }
+
+#bundleBoxContainer {
+  text-align: center;
+  margin-top: 20px; }
+  #bundleBoxContainer :nth-child(2) {
+    background-color: #b5d140; }
+  #bundleBoxContainer :nth-child(3) {
+    background-color: #c0d0af; }
+  #bundleBoxContainer :nth-child(4) {
+    background-color: #f6aa33; }
+  #bundleBoxContainer :nth-child(5) {
+    background-color: #d5c591; }
+  #bundleBoxContainer :nth-child(6) {
+    background-color: #33b1e9; }
+
+.bundleBox {
+  padding: 0;
+  border: none;
+  width: 9em;
+  height: 8.6em;
+  margin-top: 10px; }
+  .bundleBox h5 {
+    font-size: 24px;
+    color: white;
+    margin-top: 2em;
+    font-weight: normal; }
 
 .findMaterialContentWrapper {
   width: 63%;
   margin-left: 15%;
   border: solid rgba(175, 135, 135, 0.51) 0.5px;
   padding: 20px;
-  margin-top: 10px; }
-  .findMaterialContentWrapper h3 {
-    font-size: 1.2em; }
-  .findMaterialContentWrapper p {
-    font-size: 0.9em; }
+  margin-top: 10px;
+  background-color: #f2f2f2; }
+  .findMaterialContentWrapper h2, .findMaterialContentWrapper h3, .findMaterialContentWrapper h4, .findMaterialContentWrapper h5, .findMaterialContentWrapper p {
+    padding: 5px; }
 
 #searchContainer {
   margin-top: 10px;
@@ -70,10 +122,10 @@ body {
   #searchContainer input {
     margin-top: 10px; }
 
-#downloadSection h4, #downloadSection li, #downloadSection input, #downloadSection p {
+#downloadSection li, #downloadSection input {
   padding: 5px; }
 #downloadSection li {
-  font-size: 0.8em; }
+  font-size: 1em; }
 
 .awesomplete {
   width: 400px;
@@ -122,5 +174,43 @@ body {
     height: 20px;
     padding-right: 20px;
     display: inline-block; }
+
+.checkBoxContentContainer img {
+  width: 15px;
+  height: 15px;
+  display: inline-block; }
+.checkBoxContentContainer button {
+  font-size: 10px;
+  color: white;
+  border: none;
+  width: 100px;
+  height: 25px;
+  background-color: #3386c3;
+  width: 50px;
+  height: 20px; }
+
+.expandSection {
+  margin-bottom: 10px; }
+  .expandSection p {
+    display: inline-block; }
+  .expandSection input {
+    margin-left: 40px; }
+
+#levelDownImg {
+  margin-right: -14px; }
+
+footer {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #11497b;
+  color: white; }
+  footer p {
+    color: white;
+    font-size: 15px; }
+  footer #footer {
+    margin-left: 20%;
+    margin-right: 20%; }
+  footer hr {
+    size: 0.5px; }
 
 /*# sourceMappingURL=styleDanny.css.map */
