@@ -349,4 +349,39 @@ footer {
   footer hr {
     size: 0.5px; }
 
+#yourMaterialContentSection {
+  overflow: hidden; }
+
+#breadCrump {
+  margin-left: 17%;
+  font-size: 18px; }
+
+.productBox {
+  text-align: center;
+  border: solid rgba(175, 135, 135, 0.51) 0.5px;
+  display: inline-block;
+  width: 15%;
+  height: 8em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white; }
+  .productBox h3 {
+    display: inline-block; }
+
+.productBox2 {
+  text-align: center;
+  border: solid rgba(175, 135, 135, 0.51) 0.5px;
+  display: inline-block;
+  width: 15%;
+  height: 8em;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 10px;
+  position: relative;
+  background-color: white; }
+  .productBox2 h3 {
+    display: inline-block; }
+
 /*# sourceMappingURL=styleDanny.css.map */

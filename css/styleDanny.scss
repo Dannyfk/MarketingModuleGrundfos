@@ -150,12 +150,12 @@ header {
 
 
 
-@font-face { font-family: "GrundfosTheSans";
-    src: url(../fonts/GrundfosTheSansV2_8_.eot);
-    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"),
-    url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
-    font-weight: normal;
+  @font-face { font-family: "GrundfosTheSans"; 
+    src: url(../fonts/GrundfosTheSansV2_8_.eot); 
+    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), 
+    url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), 
+    url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg"); 
+    font-weight: normal; 
     font-style: normal; }
 
     //font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
@@ -175,7 +175,7 @@ body { font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimi
     p {
         font-family: Tahoma, sans-serif; color:#727272; font-size: 13px;
     }
-}
+} 
 
 $green_button: #6eb556;
 $green_buttonHover: #4aa22c;
@@ -287,7 +287,7 @@ $grey_buttonHover: #727272;
 }
 
 #searchContainer {
-    margin-top: 10px;
+    margin-top: 10px;   
     border:solid rgba(175, 135, 135, 0.51) 0.5px;
     display: inline-block;
 
@@ -417,3 +417,49 @@ footer {
         size:0.5px;
     }
 }
+
+// YourMaterial page
+
+#yourMaterialContentSection{
+    overflow:hidden;
+}
+
+#breadCrump{
+    margin-left: 17%;
+    font-size: 18px;
+}
+
+.productBox {
+    text-align: center;
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    display: inline-block;
+    width:15%;
+    height:8em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    position:relative;
+    background-color: white;
+    h3{
+        display: inline-block;
+    } 
+}
+
+.productBox2 {
+    text-align: center;
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    display: inline-block;
+    width:15%;
+    height:8em;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10px;
+    position:relative;
+    background-color: white;
+    h3{
+        display: inline-block;
+    } 
+}
+
+
+
