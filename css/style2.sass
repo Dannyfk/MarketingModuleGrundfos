@@ -1,12 +1,8 @@
-body 
-/**   display: grid
-    grid-template-columns: 15vw 70vw 15vw
-    grid-template-rows: 60vh 13vh
-    grid-template-areas: "top top top" ". bot ." */
-    background-color: #FFFFFFF          
+body
+    background-color: #FFFFFFF
     overflow-x: hidden
-    font-family: Tahoma, Verdana, Segoe, sans-serif
- 
+    font-family: "Lucida Grande", Tahoma, sans-serif
+
 .wrapper
     grid-area: top
 
@@ -15,7 +11,7 @@ body
     display: flex
     justify-content: center
 
-header 
+header
     background-color: #11497b
     background-size: cover
     background-repeat: no-repeat
@@ -29,7 +25,7 @@ header
     font-size: 20px
     letter-spacing: 2px
 
-.hero 
+.hero
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/bg.jpg")
     background-size: cover
     background-repeat: no-repeat
@@ -61,16 +57,16 @@ header
     border: none
     text-transform: uppercase
     border-radius: 2px
-    &:hover 
+    &:hover
         background-color: #4aa22c
         cursor: pointer
 
-.navbar__list 
+.navbar__list
     display: flex
     justify-content: center
 
 .navbar__link
-    color: #ffffff
+    color: #fcfcfc
     height: 100%
     letter-spacing: 0.5px
     padding: 17px 0 12px 0
@@ -78,7 +74,7 @@ header
     text-decoration: none
     text-transform: uppercase
     width: 100%
-    font-weight: bold
+    font-size: 13px
 
 .navbar2
     height: 75px
@@ -93,10 +89,10 @@ header
     letter-spacing: 2px
 
 .navbar2__item--active
-    border-bottom: 3px solid #11497b 
+    border-bottom: 3px solid #11497b
 
 
-.navbar2__list 
+.navbar2__list
     display: flex
     justify-content: center
 
@@ -111,7 +107,7 @@ header
     width: 100%
     font-weight: bold
 
-.boxes 
+.boxes
     height: 45vh
     display: flex
     justify-content: space-around
@@ -138,7 +134,7 @@ header
 .boxes__link
     text-decoration: none
 
-.search__input 
+.search__input
     width: 657px
     height: 41px
     background-color: #f7f7f7
@@ -165,4 +161,3 @@ header
     margin: 20px
     border: 2px solid #d5d5d5
     width: 790px
-
