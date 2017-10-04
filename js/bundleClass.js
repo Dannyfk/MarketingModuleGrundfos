@@ -33,15 +33,10 @@ var bundleTest2 = new bundle("Test2", intro, contain);
 
 bundleCollection.push(bundleTest2);
 
-intro = ["Help on how to use the content", "High-Quality images and videos"];
-contain = ["usp"];
-var bundleTest3 = new bundle("Test3", intro, contain);
 
-bundleCollection.push(bundleTest3);
-
-intro = ["Help on how to use the content", "High-Quality images and videos"];
-contain = ["images", "usp"];
-var bundleTest4 = new bundle("Test4", intro, contain);
+intro = ["All material related to this product", "Pick and choose what you need"];
+contain = ["images", "videos", "usp", "webbanners", "disclaimer", "guide_web", "guide_advertising"];
+var bundleTest4 = new bundle("Full", intro, contain);
 
 bundleCollection.push(bundleTest4);
 

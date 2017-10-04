@@ -6,15 +6,24 @@
     font-weight: normal; 
     font-style: normal; }
 
+    //font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
 body { font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
     button {
         font-family: GrundfosTheSans, Verdana, sans-serif;
-        p {
-            font-size: 0.8em;
-        }
+    }
+    h1 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 27px; font-weight: bold;
+    }
+    h2, h3 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 25px; font-weight: bold;
+    }
+    h4, h5 {
+        font-family: GrundfosTheSans, Verdana, sans-serif; color:#333333; text-rendering: optimizeLegibility; font-size: 23px; font-weight: bold;
+    }
+    p {
+        font-family: Tahoma, sans-serif; color:#727272; font-size: 13px;
     }
 } 
-
 
 $green_button: #6eb556;
 $green_buttonHover: #4aa22c;
@@ -59,6 +68,10 @@ $grey_buttonHover: #727272;
     cursor:pointer;
     color:$blue_button;
     display: inline-block;
+    font-family: Tahoma;
+    font-size: 13px;
+    color:#0068b4;
+    margin-bottom: 10px;
 }
 
 #selectAll:hover {
@@ -67,6 +80,45 @@ $grey_buttonHover: #727272;
 
 #bundleContentSection {
     margin-top: 20px;
+    img {
+        max-height: 200px;
+        max-width: 200px;
+    }
+}
+
+#bundleBoxContainer {
+    text-align: center;
+    margin-top: 20px;
+
+    :nth-child(2) {
+        background-color: #b5d140;
+    }
+    :nth-child(3) {
+        background-color: #c0d0af;
+    }
+    :nth-child(4) {
+        background-color: #f6aa33;
+    }
+    :nth-child(5) {
+        background-color: #d5c591;
+    }
+    :nth-child(6) {
+        background-color: #33b1e9;
+    }
+}
+
+.bundleBox {
+    padding:0;
+    border:none;
+    width:9em;
+    height:8.6em;
+    margin-top: 10px;
+    h5{
+        font-size: 24px;
+        color:white;
+        margin-top: 2em;
+        font-weight: normal;
+    }
 }
 
 .findMaterialContentWrapper {
@@ -75,11 +127,10 @@ $grey_buttonHover: #727272;
     border:solid rgba(175, 135, 135, 0.51) 0.5px;
     padding:20px;
     margin-top: 10px;
-    h3 {
-        font-size: 1.2em;
-    }
-    p{
-        font-size:0.9em;
+    background-color: #f2f2f2;
+
+    h2,h3,h4,h5,p {
+        padding:5px;
     }
 }
 
@@ -103,11 +154,11 @@ $grey_buttonHover: #727272;
 }
 
 #downloadSection {
-    h4, li, input, p{
+    li, input{
         padding: 5px;
     }
     li{
-        font-size: 0.8em;
+        font-size: 1em;
     }
 }
 
@@ -169,7 +220,51 @@ $grey_buttonHover: #727272;
     }
 }
 
+.checkBoxContentContainer {
+    img {
+        width:15px;
+        height:15px;
+        display: inline-block;
+    }
+    button{
+        font-size: 10px;
+        @include button($blue_button);
+        width:50px;
+        height:20px;
+    }
+}
 
+.expandSection{
+    p{
+        display:inline-block;
+    }
+    input {
+        margin-left: 40px;
+    }
+    margin-bottom: 10px;
+}
+
+#levelDownImg {
+    margin-right: -14px;
+}
+
+footer {
+    margin-top: 30px;
+    height: 200px;
+    background-color:#11497b;
+    color:white;
+    p {
+        color: white;
+        font-size: 15px;
+    }
+    #footer {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    hr {
+        size:0.5px;
+    }
+}
 
 
 
