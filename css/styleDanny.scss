@@ -1,0 +1,175 @@
+@font-face { font-family: "GrundfosTheSans"; 
+    src: url(../fonts/GrundfosTheSansV2_8_.eot); 
+    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), 
+    url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), 
+    url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg"); 
+    font-weight: normal; 
+    font-style: normal; }
+
+body { font-family: GrundfosTheSans, Verdana, sans-serif; text-rendering: optimizeLegibility; color:#333333;
+    button {
+        font-family: GrundfosTheSans, Verdana, sans-serif;
+        p {
+            font-size: 0.8em;
+        }
+    }
+} 
+
+
+$green_button: #6eb556;
+$green_buttonHover: #4aa22c;
+$blue_button: #3386c3;
+$blue_buttonHover: #0068b4;
+$grey_button: #999999;
+$grey_buttonHover: #727272;
+
+@mixin button($color) {
+    color:white;
+    border: none;
+    width:100px;
+    height:25px;
+    background-color:$color;
+  }
+
+#test1, #test2, #test3 {
+ cursor:pointer;
+}
+
+.bundleBox {
+    border: solid black 1px;
+    display: inline-block;
+    margin-right:10px;
+    padding:10px;
+    width:80px;
+    height:80px;
+    text-align: center;
+    cursor:pointer;
+
+    h4{
+        margin: 0;
+        padding: 0;
+    }
+}
+
+#checkBoxText {
+    display: inline-block;
+}
+
+#selectAll {
+    cursor:pointer;
+    color:$blue_button;
+    display: inline-block;
+}
+
+#selectAll:hover {
+    color:$blue_buttonHover;
+}
+
+#bundleContentSection {
+    margin-top: 20px;
+}
+
+.findMaterialContentWrapper {
+    width:63%;
+    margin-left: 15%;
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    padding:20px;
+    margin-top: 10px;
+    h3 {
+        font-size: 1.2em;
+    }
+    p{
+        font-size:0.9em;
+    }
+}
+
+#searchContainer {
+    margin-top: 10px;   
+    border:solid rgba(175, 135, 135, 0.51) 0.5px;
+    display: inline-block;
+
+    button{
+        @include button($blue_button);
+        margin-right: 5px;
+    }
+
+    button:hover{
+        background-color:$blue_buttonHover;
+    }
+
+    input {
+        margin-top: 10px;
+    }
+}
+
+#downloadSection {
+    h4, li, input, p{
+        padding: 5px;
+    }
+    li{
+        font-size: 0.8em;
+    }
+}
+
+
+.awesomplete{
+    width:400px;
+    height:25px;
+    border-color: rgba(175, 135, 135, 0.51);
+    border-width: 0.5px;
+    padding-left:15px;
+    margin-left: -5px;
+    margin-right: 10px;
+
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    color:#333333;
+
+    input {
+    background-image: url(../images/searchIcon.png);
+    background-size: 5%;
+    background-position-x: 370px;
+    background-position-y: 3px;
+    background-repeat: no-repeat;
+    }
+
+    :focus{
+        outline-color:black;
+    }
+}
+
+#downloadButton {
+    @include button($green_button);
+}
+
+#downloadButton:hover {
+    background-color: $green_buttonHover;
+}
+
+#searchErrorSection {
+    position: absolute;
+    background-color: #dedede;
+    width: 380px;
+    height:45px;
+    padding-top: 17px;
+    padding-left: 20px;
+    margin-left: -5px;
+    border-color: rgba(175, 135, 135, 0.51);
+    border-width: 0.5px;
+
+    p{
+        margin:0;
+        padding:0;
+        display: inline-block;
+    }
+
+    img {
+        height: 20px;
+        padding-right: 20px;
+        display: inline-block;
+    }
+}
+
+
+
+
+

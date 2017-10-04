@@ -1,0 +1,126 @@
+@font-face {
+  font-family: "GrundfosTheSans";
+  src: url(../fonts/GrundfosTheSansV2_8_.eot);
+  src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+body {
+  font-family: GrundfosTheSans, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: #333333; }
+  body button {
+    font-family: GrundfosTheSans, Verdana, sans-serif; }
+    body button p {
+      font-size: 0.8em; }
+
+#test1, #test2, #test3 {
+  cursor: pointer; }
+
+.bundleBox {
+  border: solid black 1px;
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  cursor: pointer; }
+  .bundleBox h4 {
+    margin: 0;
+    padding: 0; }
+
+#checkBoxText {
+  display: inline-block; }
+
+#selectAll {
+  cursor: pointer;
+  color: #3386c3;
+  display: inline-block; }
+
+#selectAll:hover {
+  color: #0068b4; }
+
+#bundleContentSection {
+  margin-top: 20px; }
+
+.findMaterialContentWrapper {
+  width: 63%;
+  margin-left: 15%;
+  border: solid rgba(175, 135, 135, 0.51) 0.5px;
+  padding: 20px;
+  margin-top: 10px; }
+  .findMaterialContentWrapper h3 {
+    font-size: 1.2em; }
+  .findMaterialContentWrapper p {
+    font-size: 0.9em; }
+
+#searchContainer {
+  margin-top: 10px;
+  border: solid rgba(175, 135, 135, 0.51) 0.5px;
+  display: inline-block; }
+  #searchContainer button {
+    color: white;
+    border: none;
+    width: 100px;
+    height: 25px;
+    background-color: #3386c3;
+    margin-right: 5px; }
+  #searchContainer button:hover {
+    background-color: #0068b4; }
+  #searchContainer input {
+    margin-top: 10px; }
+
+#downloadSection h4, #downloadSection li, #downloadSection input, #downloadSection p {
+  padding: 5px; }
+#downloadSection li {
+  font-size: 0.8em; }
+
+.awesomplete {
+  width: 400px;
+  height: 25px;
+  border-color: rgba(175, 135, 135, 0.51);
+  border-width: 0.5px;
+  padding-left: 15px;
+  margin-left: -5px;
+  margin-right: 10px;
+  font-family: GrundfosTheSans, Verdana, sans-serif;
+  color: #333333; }
+  .awesomplete input {
+    background-image: url(../images/searchIcon.png);
+    background-size: 5%;
+    background-position-x: 370px;
+    background-position-y: 3px;
+    background-repeat: no-repeat; }
+  .awesomplete :focus {
+    outline-color: black; }
+
+#downloadButton {
+  color: white;
+  border: none;
+  width: 100px;
+  height: 25px;
+  background-color: #6eb556; }
+
+#downloadButton:hover {
+  background-color: #4aa22c; }
+
+#searchErrorSection {
+  position: absolute;
+  background-color: #dedede;
+  width: 380px;
+  height: 45px;
+  padding-top: 17px;
+  padding-left: 20px;
+  margin-left: -5px;
+  border-color: rgba(175, 135, 135, 0.51);
+  border-width: 0.5px; }
+  #searchErrorSection p {
+    margin: 0;
+    padding: 0;
+    display: inline-block; }
+  #searchErrorSection img {
+    height: 20px;
+    padding-right: 20px;
+    display: inline-block; }
+
+/*# sourceMappingURL=styleDanny.css.map */

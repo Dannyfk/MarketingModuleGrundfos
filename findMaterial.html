@@ -7,8 +7,11 @@
     
         <!-- Custom stylesheet -->
         <link href="css/meyer.css" rel="stylesheet" type="text/css">
-        <link href="css/style.css" rel="stylesheet" type="text/css">
+        <link href="css/style2.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+        <link href="css/awesomplete.css" rel="stylesheet" type="text/css">
+        <link href="css/styleDanny.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <div class="wrapper">
@@ -38,11 +41,18 @@
                 </ul>
             </nav>
         </div>
-        <div class="wrapper2">
-            <section class="search">
-                <input type="text" class="search__input" placeholder="Input a 8 character product number or the name of a product">
-                <i class="fa fa-search" aria-hidden="true"></i>
-                <button type="submit" class="search__btn">Search</button>
+            <section id="bundleContentSection">
+                <article class="findMaterialContentWrapper">
+                        <h3>Download Marketing Material</h3>
+                        <p>Marketing material on Grundfos bestsellers for our distributors.</p>
+                        <p>Get the opportunity to market our products via our basic sales promotion material.</p>
+                        <p>Easy to overview and access.</p>
+                </article>
+                <article id="searchContainer" class="findMaterialContentWrapper">
+                    <input class="awesomplete" value="Alpha1"
+                    data-list="Alpha1, Alpha2, Alpha3">
+                    <button id="submit">Search</button>
+                </article>
             </section>
             <!-- <section class="slider">
                     <div>
@@ -75,5 +85,11 @@
     
     <!-- My custom javascript -->
     <script src="js/script.js"></script>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/awesomplete.min.js"></script>
+    <script src="js/productClass.js"></script>
+    <script src="js/bundleClass.js"></script>
+    <script src="js/bundleScript.js"></script>
     </html>
     
