@@ -240,7 +240,8 @@ body {
   margin-top: 10px;
   background-color: #f2f2f2; }
   .findMaterialContentWrapper h2, .findMaterialContentWrapper h3, .findMaterialContentWrapper h4, .findMaterialContentWrapper h5, .findMaterialContentWrapper p {
-    padding: 5px; }
+    margin: 5px;
+    padding: 1px; }
 
 #searchContainer {
   margin-top: 10px;

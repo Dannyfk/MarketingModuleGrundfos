@@ -28,7 +28,7 @@ var called = false;
 var created = false;
 
 function animateProductBox() {
-        $('.productBox').animate({left: '-1100px'},2000,function(){displayYourProductList()});
+        $('.productBox').animate({left: '-1100px'},800,function(){displayYourProductList()});
 
 }
 
@@ -51,13 +51,13 @@ function displayYourProductList(){
     called = true;
     $("#breadCrump").text("Materials/Water pumps");
     $("#breadCrump").click(function(){animateBack();});
-    $('.productBox2').animate({right: '0px'},2000);
+    $('.productBox2').animate({right: '0px'},800);
 }
 }
 }
 
 function animateBack(){
-    $('.productBox2').animate({right: '-1100px'},2000,function(){returnToProductFamily();});
+    $('.productBox2').animate({right: '-1100px'},800,function(){returnToProductFamily();});
     
 }
 
@@ -66,7 +66,7 @@ function returnToProductFamily(){
     $("#breadCrump").text("Materials");
     $('.productBox2').hide();
     $('.productBox').show();
-    $('.productBox').animate({left: '0px'},2000);
+    $('.productBox').animate({left: '0px'},800);
     called=false;
     created = true;
     }

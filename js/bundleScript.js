@@ -81,7 +81,7 @@ function displayBundle() {
     }
 
     $("#bundleContentSection").append(container);
-    scroll(420);
+    scroll(550);
 }
 
 //Function to display the content when a bundle is selected
@@ -111,7 +111,7 @@ function displayBundleContent(name) {
     displayDownloads(bundle, container);
 
     $("#bundleContentSection").append(container);
-    scroll(730);
+    scroll(1050);
 }
 
 //Function to display all the downloads of a product that is in the bundle
