@@ -68,7 +68,7 @@ function displayBundle() {
     var productThumbnail = $("<image src="+product.thumbnail+" alt='Product thumbnail'><br>");
     container.append(productThumbnail);
 
-    var bundleBoxContainer = $("<section id='bundleBoxContainer'><h4>Bundles</h4></section>");
+    var bundleBoxContainer = $("<section id='bundleBoxContainer'><h4>Marketing Material Bundles</h4></section>");
     //loop to add the bundles from a list in bundleClass
     for(var i = 0; i<bundleCollection.length; i++){
         //the loop creates a box containing the bundle with a click function thats called with the id of the box
