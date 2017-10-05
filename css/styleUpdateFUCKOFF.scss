@@ -1,0 +1,316 @@
+/*style for header,nav etc*/
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  font-family: MyWebfont, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto;
+}
+  /*Grundfos fonts installed*/
+  /*
+  FONTS TO USE besides grundfos':
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  */
+
+  @font-face {
+    font-family: "GrundfosTheSans";
+    src: url(../fonts/GrundfosTheSansV2_8_.eot);
+    src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+    @font-face {
+      font-family: "GrundfosTheSansLight";
+      src: url(../fonts/GrundfosTheSansV2SemiLight.eot);
+      src: url(../fonts/GrundfosTheSansV2SemiLight.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2SemiLight.woff) format("woff"), url(../fonts/GrundfosTheSansV2SemiLight.svg#GrundfosTheSansSemiLight) format("svg");
+      font-weight: normal;
+      font-style: normal; }
+/*header and nav*/
+
+header {
+  background-color: #11497b;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 9em;
+}
+
+.logo {
+  margin: 1em;
+}
+
+.navbar__item {
+  display: inline-block;
+  font-size: 20px;
+  padding: 1em;
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+/*Picture and calll-to-action button*/
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr;
+}
+
+.hero__heading {
+  color: #fcfcfc;
+  font-size: 35px;
+  text-shadow: 0 1px 0 black;
+ }
+
+.hero__text {
+  color: #fcfcfc;
+  font-family: "GrundfosTheSansLight";
+  font-size: 20px;
+  text-shadow: 0 1px 0 black;
+ }
+
+.hero__btn {
+  font-size: 20px;
+  color: #fcfcfc;
+  width: 300px;
+  height: 40px;
+  background-color: #6eb556;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  font-weight: bold;
+}
+
+  .hero__btn:hover {
+    background-color: #4aa22c;
+    cursor: pointer; }
+
+.navbar__list {
+  display: flex;
+  justify-content: center; }
+
+.navbar__link {
+  color: #fcfcfc;
+  height: 100%;
+  letter-spacing: 0.5px;
+  padding: 17px 0 12px 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-size: 13px;
+}
+
+/*secondary navigation*/
+.navbar2 {
+  height: 75px;
+  background-color: #dedede;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.navbar2__list {
+  display: flex;
+  margin: 0;
+ }
+
+.navbar2__item {
+  display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    align-self: center;
+}
+.navbar2__item:hover {
+  display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    align-self: center;
+    background-color: #d6d6d6;
+}
+
+.navbar2__item--active {
+  border-bottom: 3px solid #11497b; }
+
+.navbar2__link {
+  color: #333333;
+  height: 100%;
+  letter-spacing: 0.5px;
+  padding: 17px 0 12px 0;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold; }
+
+/* boxes with pages*/
+.boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 4em;
+}
+
+.boxes__heading {
+  font-size: 22px;
+  color: #333333; }
+
+.boxes__text {
+  font-size: 18px;
+  color: #333333;
+  font-family: "GrundfosTheSansLight";
+ }
+
+.boxes__link {
+  text-decoration: none; }
+
+.search__input {
+  width: 657px;
+  height: 41px;
+  background-color: #f7f7f7;
+  border: 2px solid #d5d5d5;
+  padding: 15px;
+  outline: none;
+  margin-right: 16px; }
+
+.search__input::placeholder {
+  color: #c9c9c9; }
+
+.search__btn {
+  height: 40px;
+  width: 110px;
+  background-color: #127abe;
+  border: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.search {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #d5d5d5;
+  width: 790px; }
+
+/* update boxes */
+main {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-column-gap: 2em;
+margin: 3em;
+justify-content: center;
+}
+
+main #update_1,
+main #update_2,
+main #update_3,
+main #update_4 {
+  display: grid;
+  align-content: end;
+  width: 20em;
+  height: 15em;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+main #update_2 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+main #update_3 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+main #update_4 {
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.main__link {
+  margin: 20px;
+}
+
+main h3,
+main p {
+  color: #fcfcfc;
+  align-self: end;
+  text-shadow: 0 1px 0 black;
+}
+
+main p {
+  align-self: end;
+}
+
+main .updateModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+main .updateModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+main .updateModal>div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+main .close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: -15px;
+  top: -10px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px #000;
+}
+
+main .close:hover {
+  background-color: #00d9ff;
+}
+
+/* footer */
+footer {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #11497b;
+  color: white; }
+  footer p {
+    color: white;
+    font-size: 15px; }
+  footer #footer {
+    margin-left: 20%;
+    margin-right: 20%; }
+  footer hr {
+    size: 0.5px; }

@@ -172,10 +172,10 @@ main #update_4 {
   align-content: end;
   width: 20em;
   height: 15em;
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(../images/alpha3_update.jpg);
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/alpha3_update.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7))), url(../images/alpha3_update.jpg);
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/alpha3_update.jpg);
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/alpha3_update.jpg);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), url(../images/alpha3_update.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -183,28 +183,28 @@ main #update_4 {
 }
 
 main #update_2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(../images/circulators_update.jpg);
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/circulators_update.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7))), url(../images/circulators_update.jpg);
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/circulators_update.jpg);
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/circulators_update.jpg);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), url(../images/circulators_update.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
 main #update_3 {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(../images/scala2_update.jpg);
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/scala2_update.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7))), url(../images/scala2_update.jpg);
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/scala2_update.jpg);
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/scala2_update.jpg);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), url(../images/scala2_update.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
 
 main #update_4 {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.4))), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
-  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
-  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.4)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
-  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.4)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(0, 0, 0, 0.7))), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.7)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), url(../images/GFS_ALPHA3_wPhone_Left_960x408px.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%; }
@@ -213,11 +213,11 @@ main #update_4 {
   margin: 20px; }
 
 .updateBox__title {
-  margin: 5px 10px;
+  margin: 0px 10px;
   font-family: "GrundfosTheSansLight";
 }
 .updateBox__description {
-  margin: 5px 10px;
+  margin: 10px 10px;
   font-family: "GrundfosTheSansLight";
 }
 main h3,
