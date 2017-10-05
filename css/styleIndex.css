@@ -59,16 +59,15 @@ header {
 
 .hero__heading {
   color: #fcfcfc;
+  font-family: "GrundfosTheSans";
   font-size: 35px;
-  text-shadow: 0 1px 0 black;
- }
+  text-shadow: 0 1px 0 black; }
 
 .hero__text {
   color: #fcfcfc;
   font-family: "GrundfosTheSansLight";
   font-size: 20px;
-  text-shadow: 0 1px 0 black;
- }
+  text-shadow: 0 1px 0 black; }
 
 .hero__btn {
   font-size: 20px;
@@ -79,7 +78,7 @@ header {
   border: none;
   text-transform: uppercase;
   border-radius: 2px;
-  font-family: "Lucida Grande", Tahoma, sans-serif;
+  font-family: "GrundfosTheSansLight";
   font-weight: bold;
 }
 
