@@ -1,0 +1,132 @@
+
+@font-face {
+  font-family: "GrundfosTheSans";
+  src: url(../fonts/GrundfosTheSansV2_8_.eot);
+  src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "GrundfosTheSansLight";
+  src: url(../fonts/GrundfosTheSansV2SemiLight.eot);
+  src: url(../fonts/GrundfosTheSansV2SemiLight.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2SemiLight.woff) format("woff"), url(../fonts/GrundfosTheSansV2SemiLight.svg#GrundfosTheSansSemiLight) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+
+.updateModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+
+}
+.updateModal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.updateModal > div {
+  width: 500px;
+  position: relative;
+  margin: 10% auto;
+  background: #fafafa;
+  box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+.updateModal__header {
+  background-color: #b7b6b6;
+  padding: 20px 20px 20px 20px;
+  border-top: 10px solid #0068b4;
+  box-shadow: 0px 0px 1px 1px #333333;
+	height: auto;
+}
+.updateModal__name {
+  color: #fcfcfc;
+  font-family: "GrundfosTheSans";
+  font-size: 20px;
+  text-shadow: 0 1px 0 black;
+  margin: 0;
+}
+.close {
+  background: #606061;
+  color: #ffffff;
+  line-height: 25px;
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  width: 25px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+
+}
+.close:hover {
+  background-color: #000;
+}
+.updateModal__info {
+  padding: 20px;
+}
+.updateModal__headline {
+  color: #333333;
+  font-family: "GrundfosTheSans";
+  font-size: 20px;
+}
+.updateModal__signature {
+	/*FONTS & SIZE HERE !*/
+  font-family: "GrundfosTheSansLight";
+	font-style: italic;
+  color: #0068b4;
+  text-shadow: 0;
+}
+.updateModal__signature:hover {
+	/*FONTS & SIZE HERE !*/
+	font-style: italic;
+  color: #11497b;
+  cursor: pointer;
+}
+.updateModal__info > ul {
+  margin: 20px 20px;
+}
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttonGroup > button {
+  width: 250px;
+  height: 40px;
+  margin: 10px auto;
+}
+.buttonGroup__button--download {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 148px;
+  height: 31px;
+  background-color: #6eb556;
+  border: none;
+  text-transform: uppercase;
+}
+.buttonGroup__button--preview {
+  font-size: 13px;
+  font-weight: bold;
+  color: #ffffff;
+  width: 148px;
+  height: 31px;
+  background-color: #3386c3;
+  border: none;
+  text-transform: uppercase;
+}
+.buttonGroup__button--download:hover {
+  background-color: #4aa22c;
+  cursor: pointer;
+}
+.buttonGroup__button--preview:hover {
+  background-color: #0068b4;
+  cursor: pointer;
+}

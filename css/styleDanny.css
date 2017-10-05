@@ -53,6 +53,7 @@ header {
 
 .hero__heading {
   color: #fcfcfc;
+  font-family: "GrundfosTheSans";
   font-size: 35px;
   text-shadow: 0 1px 0 black; }
 
@@ -71,8 +72,9 @@ header {
   border: none;
   text-transform: uppercase;
   border-radius: 2px;
-  font-family: "Lucida Grande", Tahoma, sans-serif;
-  font-weight: bold; }
+  font-family: "GrundfosTheSansLight";
+  font-weight: bold;
+}
 
 .hero__btn:hover {
   background-color: #4aa22c;
