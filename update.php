@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Marketing Module</title>
+<!-- Head include -->
+<?php
+$title="Marketing material updates";
+$description="View all updates since your last visit";
+include("includes/head.inc.php");
+?>
 
     <!-- Custom stylesheet -->
     <link href="css/styleUpdate.css" rel="stylesheet" type="text/css">
@@ -13,32 +11,9 @@
 </head>
 
 <body>
-  <div class="wrapper">
-      <header class="header">
-        <a href="index.html"><img src="images/logo.png" class="logo"></a>
-          <nav class="navbar">
-              <ul class="navbar__list">
-                  <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>
-                  <li class="navbar__item"><a href="#" class="navbar__link">Cases</a></li>
-                  <li class="navbar__item"><a href="#" class="navbar__link">Get to know us</a></li>
-                  <li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
-                  <li class="navbar__item"><a href="#" class="navbar__link">How to buy</a></li>
-              </ul>
-          </nav>
-      </header>
-      <section class="hero">
-              <h1 class="hero__heading">Media center</h1>
-              <h2 class="hero__text">Everything you need for our products is here.</h2>
-              <button class="hero__btn">Get started</button>
-      </section>
-      <nav class="navbar2">
-          <ul class="navbar2__list">
-              <li class="navbar2__item"><a href="findMaterial.html" class="navbar2__link">Find materials</a></li>
-              <li class="navbar2__item"><a href="yourMaterials.html" class="navbar2__link">Your materials</a></li>
-              <li class="navbar2__item navbar2__item--active"><a href="update.html" class="navbar2__link">Updates</a></li>
-          </ul>
-      </nav>
-  </div>
+<?php 
+    include("includes/nav.inc.php");
+    ?>
   <main>
   <a id="update_1" href="#openModal" class="main__link">
       <h3 class="updateBox__title">New user manual</h3>
@@ -80,22 +55,11 @@
           </div>
         </div>
         <!-- / Modal -->
-        <footer>
-            <article id="footer">
-                <br>
-                <p>be think innovate</p>
-                <hr>
-                <br>
-                <br>
-                <br>
-            </article>
-        </footer>
-
-    </main>
-
-</body>
-
-<!-- My custom javascript -->
-<script src="js/script.js"></script>
-
+        <?php 
+        include("includes/footer.inc.php");
+        ?>
+        <script>
+          $(".navbar2__list li:nth-child(3)").addClass('navbar2__item--active');
+          $(".notification-label").remove();
+        </script>
 </html>
