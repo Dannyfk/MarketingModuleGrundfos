@@ -7,6 +7,8 @@ include("includes/head.inc.php");
 
     <link href="css/awesomplete.css" rel="stylesheet" type="text/css">
     <link href="css/styleDanny.css" rel="stylesheet" type="text/css">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
 
     <body>
@@ -27,6 +29,21 @@ include("includes/head.inc.php");
             </article>
         </section>
 
+        <!-- carousel -->
+        <div class="carousel__center">
+            <h3>Most searched products</h3>
+            <div class="carousel" data-flickity='{ "contain": true, "autoPlay": 1750, "imagesLoaded": true, "initialIndex": 1, "freeScroll": true, "wrapAround": true, "selectedAttraction": 0.01, "friction": 0.15, "freeScrollFriction": 0.04 }'>
+                <a href="#" class="carousel-cell "><img src="images/scala2_update.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/Updates.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/YourMaterials.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/bg.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/GFS_ALPHA3_wPhone_Left_960x408px.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/circulators_update.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/scala2_update.jpg" alt="" class="carousel-cell__img"></a>
+            </div>
+        </div>
+
+
         <?php 
             include("includes/footer.inc.php");
             ?>
@@ -38,4 +55,5 @@ include("includes/head.inc.php");
         <script>
         $(".navbar2__list li:nth-child(1)").addClass('navbar2__item--active');
         </script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
         </html>
