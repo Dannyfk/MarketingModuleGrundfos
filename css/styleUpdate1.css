@@ -1,0 +1,313 @@
+/*style for header,nav etc*/
+body {
+  background-color: #fcfcfc;
+  overflow-x: hidden;
+  font-family: MyWebfont, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  margin: 0 auto; }
+
+/*Grundfos fonts installed*/
+/*
+  FONTS TO USE besides grundfos':
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  */
+@font-face {
+  font-family: "GrundfosTheSans";
+  src: url(../fonts/GrundfosTheSansV2_8_.eot);
+  src: url(../fonts/GrundfosTheSansV2_8_.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2_8_.woff) format("woff"), url(../fonts/GrundfosTheSansV2_8_.svg#GrundfosTheSansV2_8_) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "GrundfosTheSansLight";
+  src: url(../fonts/GrundfosTheSansV2SemiLight.eot);
+  src: url(../fonts/GrundfosTheSansV2SemiLight.eot?#iefix) format("embedded-opentype"), url(../fonts/GrundfosTheSansV2SemiLight.woff) format("woff"), url(../fonts/GrundfosTheSansV2SemiLight.svg#GrundfosTheSansSemiLight) format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/*header and nav*/
+header {
+  background-color: #11497b;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 9em; }
+  header .logo {
+    margin: 1em; }
+  header .navbar__item {
+    display: inline-block;
+    font-size: 20px;
+    padding: 1em;
+    font-family: "Lucida Grande", Tahoma, sans-serif;
+    font-weight: bold; }
+  header .navbar__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  header .navbar__link {
+    color: #fcfcfc;
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 13px; }
+
+/*Picture and calll-to-action button*/
+.hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/background.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 2em;
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 1fr 1fr; }
+  .hero .hero__heading {
+    color: #fcfcfc;
+    font-family: "GrundfosTheSans";
+    font-size: 35px;
+    text-shadow: 0 1px 0 black; }
+  .hero .hero__text {
+    color: #fcfcfc;
+    font-family: "GrundfosTheSansLight";
+    font-size: 20px;
+    text-shadow: 0 1px 0 black; }
+  .hero .hero__btn {
+    font-size: 20px;
+    color: #fcfcfc;
+    width: 300px;
+    height: 40px;
+    background-color: #6eb556;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: "GrundfosTheSansLight";
+    font-weight: bold; }
+  .hero .hero__btn:hover {
+    background-color: #4aa22c;
+    cursor: pointer; }
+
+/*secondary navigation*/
+.navbar2 {
+  height: 75px;
+  background-color: #dedede;
+  border-bottom: 1px solid #c9c9c9; }
+  .navbar2 .navbar2__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+  .navbar2 .navbar2__item {
+    display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .navbar2 .navbar2__item:hover {
+    display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-color: #d6d6d6; }
+  .navbar2 .navbar2__item--active {
+    border-bottom: 3px solid #11497b; }
+  .navbar2 .navbar2__link {
+    color: #333333;
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold; }
+
+/* footer */
+footer {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #11497b;
+  color: white; }
+  footer #footer {
+    margin-left: 20%;
+    margin-right: 20%; }
+  footer p {
+    color: white;
+    font-size: 15px; }
+  footer hr {
+    size: 0.5px; }
+
+/* update boxes */
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  main .main__link {
+    display: grid;
+    -webkit-align-content: end;
+    -ms-flex-line-pack: end;
+    align-content: end;
+    width: 20em;
+    height: 15em;
+    margin: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-decoration: none; }
+    main .main__link .updateBox__title {
+      margin: 0px 10px;
+      font-family: "GrundfosTheSansLight";
+      color: #fcfcfc;
+      -webkit-align-self: end;
+      -ms-flex-item-align: end;
+      align-self: end;
+      text-shadow: 0 1px 0 black; }
+    main .main__link .updateBox__description {
+      margin: 10px 10px;
+      font-family: "GrundfosTheSansLight";
+      color: #fcfcfc;
+      -webkit-align-self: end;
+      -ms-flex-item-align: end;
+      align-self: end;
+      text-shadow: 0 1px 0 black; }
+  main #update_1 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/alpha3_update.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/alpha3_update.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/alpha3_update.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/alpha3_update.jpg"); }
+  main #update_2 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/circulators_update.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/circulators_update.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/circulators_update.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/circulators_update.jpg"); }
+  main #update_3 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/scala2_update.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scala2_update.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scala2_update.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/scala2_update.jpg"); }
+  main #update_4 {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/phone_update.jpg");
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/phone_update.jpg");
+    background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/phone_update.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/phone_update.jpg"); }
+
+/*modal box*/
+.updateModal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.7);
+  z-index: 99999;
+  opacity: 0;
+  transition: opacity 400ms ease-in;
+  pointer-events: none; }
+  .updateModal:target {
+    opacity: 1;
+    pointer-events: auto; }
+  .updateModal > div {
+    width: 500px;
+    position: relative;
+    margin: 10% auto;
+    background: #fafafa;
+    box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.7); }
+    .updateModal > div .updateModal__header {
+      background-color: #b7b6b6;
+      padding: 20px 20px 20px 20px;
+      border-top: 10px solid #0068b4;
+      box-shadow: 0px 0px 1px 1px #333333;
+      height: auto; }
+      .updateModal > div .updateModal__header .close {
+        background: #606061;
+        color: #ffffff;
+        line-height: 25px;
+        position: absolute;
+        right: 20px;
+        top: 25px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold; }
+      .updateModal > div .updateModal__header .close:hover {
+        background-color: #000; }
+      .updateModal > div .updateModal__header .updateModal__name {
+        color: #fcfcfc;
+        font-family: "GrundfosTheSans";
+        font-size: 20px;
+        text-shadow: 0 1px 0 black;
+        margin: 0; }
+    .updateModal > div .updateModal__info {
+      padding: 20px; }
+      .updateModal > div .updateModal__info > ul {
+        margin: 20px 20px; }
+      .updateModal > div .updateModal__info .updateModal__headline {
+        color: #333333;
+        font-family: "GrundfosTheSans";
+        font-size: 20px; }
+      .updateModal > div .updateModal__info .buttonGroup {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column; }
+        .updateModal > div .updateModal__info .buttonGroup > button {
+          width: 250px;
+          height: 40px;
+          margin: 10px auto; }
+        .updateModal > div .updateModal__info .buttonGroup .buttonGroup__button--download {
+          font-size: 13px;
+          font-weight: bold;
+          color: #ffffff;
+          width: 148px;
+          height: 31px;
+          background-color: #6eb556;
+          border: none;
+          text-transform: uppercase; }
+        .updateModal > div .updateModal__info .buttonGroup .buttonGroup__button--download:hover {
+          background-color: #4aa22c;
+          cursor: pointer; }
+        .updateModal > div .updateModal__info .buttonGroup .buttonGroup__button--preview {
+          font-size: 13px;
+          font-weight: bold;
+          color: #ffffff;
+          width: 148px;
+          height: 31px;
+          background-color: #3386c3;
+          border: none;
+          text-transform: uppercase; }
+        .updateModal > div .updateModal__info .buttonGroup .buttonGroup__button--preview:hover {
+          background-color: #0068b4;
+          cursor: pointer; }
+        .updateModal > div .updateModal__info .buttonGroup .updateModal__signature {
+          /*FONTS & SIZE HERE !*/
+          font-family: "GrundfosTheSansLight";
+          font-style: italic;
+          color: #0068b4;
+          text-shadow: 0; }
+        .updateModal > div .updateModal__info .buttonGroup .updateModal__signature:hover {
+          /*FONTS & SIZE HERE !*/
+          font-style: italic;
+          color: #11497b;
+          cursor: pointer; }
+
+/*# sourceMappingURL=styleUpdate1.css.map */
