@@ -1,6 +1,6 @@
 <div class="wrapper">
 <header class="header">
-  <a href="index.html"><img src="images/logo.png" class="logo"></a>
+  <a href="index.php"><img src="images/logo.png" class="logo"></a>
     <nav class="navbar">
         <ul class="navbar__list">
             <li class="navbar__item"><a href="#" class="navbar__link">Products</a></li>

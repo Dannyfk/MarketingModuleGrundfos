@@ -1,4 +1,4 @@
-/*style for navigations etc*/
+/*style for header,nav etc*/
 body {
   background-color: #fcfcfc;
   overflow-x: hidden;
@@ -8,9 +8,9 @@ body {
 
 /*Grundfos fonts installed*/
 /*
-FONTS TO USE besides grundfos':
-font-family: "Lucida Grande", Tahoma, sans-serif;
-*/
+  FONTS TO USE besides grundfos':
+  font-family: "Lucida Grande", Tahoma, sans-serif;
+  */
 @font-face {
   font-family: "GrundfosTheSans";
   src: url(../fonts/GrundfosTheSansV2_8_.eot);
@@ -30,19 +30,39 @@ header {
   background-repeat: no-repeat;
   background-position: center center;
   height: 9em; }
-
-.logo {
-  margin: 1em; }
-
-.navbar__item {
-  display: inline-block;
-  font-size: 20px;
-  padding: 1em;
-  font-family: "Lucida Grande", Tahoma, sans-serif;
-  font-weight: bold; }
+  header .logo {
+    margin: 1em; }
+  header .navbar__item {
+    display: inline-block;
+    font-size: 20px;
+    padding: 1em;
+    font-family: "Lucida Grande", Tahoma, sans-serif;
+    font-weight: bold; }
+  header .navbar__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  header .navbar__link {
+    color: #fcfcfc;
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 13px; }
 
 /*Picture and calll-to-action button*/
 .hero {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../images/background.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,124 +70,88 @@ header {
   display: grid;
   justify-items: center;
   grid-template-rows: 1fr 1fr; }
-
-.hero__heading {
-  color: #fcfcfc;
-  font-family: "GrundfosTheSans";
-  font-size: 35px;
-  text-shadow: 0 1px 0 black; }
-
-.hero__text {
-  color: #fcfcfc;
-  font-family: "GrundfosTheSansLight";
-  font-size: 20px;
-  text-shadow: 0 1px 0 black; }
-
-.hero__btn {
-  font-size: 20px;
-  color: #fcfcfc;
-  width: 300px;
-  height: 40px;
-  background-color: #6eb556;
-  border: none;
-  text-transform: uppercase;
-  border-radius: 2px;
-  font-family: "GrundfosTheSansLight";
-  font-weight: bold;
-}
-
-.hero__btn:hover {
-  background-color: #4aa22c;
-  cursor: pointer; }
-
-.navbar__list {
-  display: flex;
-  justify-content: center; }
-
-.navbar__link {
-  color: #fcfcfc;
-  height: 100%;
-  letter-spacing: 0.5px;
-  padding: 17px 0 12px 0;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  font-size: 13px; }
+  .hero .hero__heading {
+    color: #fcfcfc;
+    font-family: "GrundfosTheSans";
+    font-size: 35px;
+    text-shadow: 0 1px 0 black; }
+  .hero .hero__text {
+    color: #fcfcfc;
+    font-family: "GrundfosTheSansLight";
+    font-size: 20px;
+    text-shadow: 0 1px 0 black; }
+  .hero .hero__btn {
+    font-size: 20px;
+    color: #fcfcfc;
+    width: 300px;
+    height: 40px;
+    background-color: #6eb556;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+    font-family: "GrundfosTheSansLight";
+    font-weight: bold; }
+  .hero .hero__btn:hover {
+    background-color: #4aa22c;
+    cursor: pointer; }
 
 /*secondary navigation*/
 .navbar2 {
   height: 75px;
   background-color: #dedede;
   border-bottom: 1px solid #c9c9c9; }
+  .navbar2 .navbar2__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+  .navbar2 .navbar2__item {
+    display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center; }
+  .navbar2 .navbar2__item:hover {
+    display: inline-block;
+    margin-right: 3em;
+    line-height: 75px;
+    font-size: 15px;
+    font-family: GrundfosTheSans, Verdana, sans-serif;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    background-color: #d6d6d6; }
+  .navbar2 .navbar2__item--active {
+    border-bottom: 3px solid #11497b; }
+  .navbar2 .navbar2__link {
+    color: #333333;
+    height: 100%;
+    letter-spacing: 0.5px;
+    padding: 17px 0 12px 0;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    width: 100%;
+    font-weight: bold; }
 
-.navbar2__list {
-  display: flex;
-  margin: 0; }
-
-.navbar2__item {
-  display: inline-block;
-  margin-right: 3em;
-  line-height: 75px;
-  font-size: 15px;
-  font-family: GrundfosTheSans, Verdana, sans-serif;
-  align-self: center; }
-
-.navbar2__item:hover {
-  display: inline-block;
-  margin-right: 3em;
-  line-height: 75px;
-  font-size: 15px;
-  font-family: GrundfosTheSans, Verdana, sans-serif;
-  align-self: center;
-  background-color: #d6d6d6; }
-
-.navbar2__item--active {
-  border-bottom: 3px solid #11497b; }
-
-.navbar2__link {
-  color: #333333;
-  height: 100%;
-  letter-spacing: 0.5px;
-  padding: 17px 0 12px 0;
-  position: relative;
-  text-decoration: none;
-  text-transform: uppercase;
-  width: 100%;
-  font-weight: bold; }
-
-/* notification */
-
-.notification-label {
-  position: absolute;
-  top: -1px;
-  right: 1px;
-  min-width: 8px;
-  height: 20px;
-  line-height: 20px;
-  margin-top: -11px;
-  padding: 0 6px;
-  font-weight: normal;
-  color: white;
-  text-align: center;
-  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
-  background: #e23442;
-  border: none;
-  border-radius: 10px;
-  background-image: -webkit-linear-gradient(top, #e8616c, #dd202f);
-  background-image: -moz-linear-gradient(top, #e8616c, #dd202f);
-  background-image: -o-linear-gradient(top, #e8616c, #dd202f);
-  background-image: linear-gradient(to bottom, #e8616c, #dd202f);
-  -webkit-box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
-  box-shadow: inset 0 0 1px 1px rgba(255, 255, 255, 0.1), 0 1px rgba(0, 0, 0, 0.12);
-}
-
-.notification-label {
-  position: absolute;
-  top: 10px;
-  right: -15px;
-}
-
+/* footer */
+footer {
+  margin-top: 30px;
+  height: 200px;
+  background-color: #11497b;
+  color: white; }
+  footer #footer {
+    margin-left: 20%;
+    margin-right: 20%; }
+  footer p {
+    color: white;
+    font-size: 15px; }
+  footer hr {
+    size: 0.5px; }
 
 @font-face {
   font-family: "GrundfosTheSans";

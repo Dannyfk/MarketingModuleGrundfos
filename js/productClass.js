@@ -11,6 +11,11 @@ function product(name, thumbnail) {
     this.guide_advertising = false;
 }
 
+function simpleProduct(name, thumbnail) {
+    this.name = name;
+    this.thumbnail = thumbnail;
+}
+
 
 //List for all the products
 var productCollection = [];

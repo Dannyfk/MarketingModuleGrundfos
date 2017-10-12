@@ -37,7 +37,7 @@ include("includes/head.inc.php");
                 <a href="#" class="carousel-cell "><img src="images/Updates.jpg" alt="" class="carousel-cell__img"></a>
                 <a href="#" class="carousel-cell "><img src="images/YourMaterials.jpg" alt="" class="carousel-cell__img"></a>
                 <a href="#" class="carousel-cell "><img src="images/bg.jpg" alt="" class="carousel-cell__img"></a>
-                <a href="#" class="carousel-cell "><img src="images/GFS_ALPHA3_wPhone_Left_960x408px.jpg" alt="" class="carousel-cell__img"></a>
+                <a href="#" class="carousel-cell "><img src="images/Updates.jpg" alt="" class="carousel-cell__img"></a>
                 <a href="#" class="carousel-cell "><img src="images/circulators_update.jpg" alt="" class="carousel-cell__img"></a>
                 <a href="#" class="carousel-cell "><img src="images/scala2_update.jpg" alt="" class="carousel-cell__img"></a>
             </div>
