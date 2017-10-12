@@ -1,12 +1,15 @@
+// We create a list to show on the yourmaterial page
 var productFamilyList = [];
 for(var i = 0; i<10; i++){
     productFamilyList.push("Water pump")
 }
+//List to be shown when selecting a water pump
 var yourProductList = [];
 for(var i = 0; i<10; i++){
     yourProductList.push("Product name")
 }
 
+//We call the displayProductFamily on DOM ready
 $(document).ready(function() {
     
 displayProductFamily();
@@ -14,6 +17,7 @@ displayProductFamily();
     
 });
 
+//We create a box for each of the objects from productFamilyList
 function displayProductFamily(){
     for(var i = 0; i<productFamilyList.length; i++){
     var container = $("<section class='productBox' onClick='animateProductBox()'></section>");
@@ -24,6 +28,7 @@ function displayProductFamily(){
 
 }
 
+// Variables to keep track of the state of the page
 var called = false;
 var created = false;
 
@@ -32,6 +37,7 @@ function animateProductBox() {
 
 }
 
+// We first check the state of the page so we can either create the productList or animate it back
 function displayYourProductList(){
     if(called === false){
         if(created===false){
@@ -61,6 +67,7 @@ function animateBack(){
     
 }
 
+// Animates back to the productFamily
 function returnToProductFamily(){
     if(called===true){
     $("#breadCrump").text("Materials");
