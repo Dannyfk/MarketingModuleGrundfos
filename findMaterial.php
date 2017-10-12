@@ -4,11 +4,12 @@ $title="Find material page";
 $description="Find and download your desired marketing material";
 include("includes/head.inc.php");
 ?>
-
+<link href="css/styleIndex.css" rel="stylesheet" type="text/css">
     <link href="css/awesomplete.css" rel="stylesheet" type="text/css">
     <link href="css/styleDanny.css" rel="stylesheet" type="text/css">
     <link href="css/carousel.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="css/styleTemplate.css" rel="stylesheet" type="text/css">
     </head>
 
     <body>

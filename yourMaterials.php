@@ -5,6 +5,7 @@ $description="View all your relavant pumps";
 include("includes/head.inc.php");
 ?>
         <!-- Custom stylesheet -->
+        <link href="css/styleIndex.css" rel="stylesheet" type="text/css">
         <link href="css/awesomplete.css" rel="stylesheet" type="text/css">
         <link href="css/styleDanny.css" rel="stylesheet" type="text/css">
     </head>
