@@ -1,5 +1,9 @@
 @import 'styleTemplate';
 
+a#update_1.main__link, a#update_2.main__link, a#update_3.main__link, a#update_4.main__link{
+  background-size: cover;
+}
+
 /* update boxes */
 main {
   display: flex;
@@ -9,6 +13,23 @@ main {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+
+
+  #update_1 {
+    @include linear-gradient(url("../images/alpha3_update.jpg"));
+  }
+
+  #update_2 {
+    @include linear-gradient(url("../images/circulators_update.jpg"));
+  }
+
+  #update_3 {
+   @include linear-gradient(url("../images/scala2_update.jpg"));
+  }
+
+  #update_4 {
+    @include linear-gradient(url("../images/Updates.jpg"));
+  }
 
   .main__link {
     display: grid;
@@ -41,23 +62,6 @@ main {
       align-self: end;
       text-shadow: 0 1px 0 black;
     }
-  }
-
-
-  #update_1 {
-    @include linear-gradient(url("../images/alpha3_update.jpg"));
-  }
-
-  #update_2 {
-    @include linear-gradient(url("../images/circulators_update.jpg"));
-  }
-
-  #update_3 {
-    @include linear-gradient(url("../images/scala2_update.jpg"));
-  }
-
-  #update_4 {
-    @include linear-gradient(url("../images/Updates.jpg"));
   }
 }
 
